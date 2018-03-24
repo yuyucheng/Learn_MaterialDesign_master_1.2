@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/list_camera"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title=""
+        android:orderInCategory="90"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/list_setting"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="设置"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+</menu>

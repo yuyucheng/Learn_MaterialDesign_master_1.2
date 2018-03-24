@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--CoordinatorLayout 协调包容性的布局 Material风格 的主控件-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/list_appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+        <!--原ActionBar 区域的扩展控件-->
+        <!--AppBarLayout的子View,通过app:layout_scrollFlags属性来控制,滚动时候的表现-->
+
+        <!--Toolbar:头部导航栏 Material风格的ActionBar-->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/list_collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/blue_600"
+            app:expandedTitleMarginEnd="20dp"
+            app:expandedTitleMarginStart="20dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <!--CollapsingToolbarLayout作用是提供了一个可以折叠的Toolbar-->
+
+            <!--contentScrim ToolBar停留在顶部的背景色-->
+            <!--app:collapsedTitleTextAppearance 这是在收缩时Title文字特点外形的设置-->
+            <!--app:expandedTitleTextAppearance 同理这是在展开时Title文字特点外形的设置-->
+            <!--app:expandedTitleMarginStart 设置扩张时候(还没有收缩时)title向左填充的距离-->
+            <!--app:expandedTitleMarginEnd 这个同理是收缩结束时向左填空的距离-->
+
+            <!--用户自定义可折叠头部区域-->
+            <LinearLayout
+                android:id="@+id/list_head_layout"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/default_text_white"
+                android:orientation="vertical"
+                app:layout_collapseMode="pin"
+                app:layout_collapseParallaxMultiplier="0.7">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="50dp">
+
+                    <ImageView
+                        android:id="@+id/list_iv_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/icon_sleep" />
+
+                    <TextView
+                        android:id="@+id/list_tv_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:text="养羊骆"
+                        android:textColor="@color/yellow_800"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/list_toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+            <!--Toolbar 代替ActionBar存在-->
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_rv_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/list_fb_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="@dimen/dp_15"
+        android:backgroundTint="@color/yellow_800"
+        android:src="@android:drawable/ic_menu_manage"
+        app:backgroundTint="@color/yellow_700"
+        app:fabSize="normal"
+        app:layout_anchor="@id/list_rv_data"
+        app:layout_anchorGravity="right|bottom|end"
+        app:rippleColor="@android:color/holo_orange_dark" />
+
+</android.support.design.widget.CoordinatorLayout>

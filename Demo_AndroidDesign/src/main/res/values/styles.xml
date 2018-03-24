@@ -1,0 +1,128 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+
+        <!--actionBar默认使用该颜色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--应用的主要暗色调-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--一般控件的选种效果默认采用该颜色-->
+        <item name="colorAccent">@color/transparent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <!--材料设计ToolBar必要样式-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorBackground">@color/background_material_light</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--自定义主题-->
+    <style name="customTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--actionBar默认使用该颜色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--应用的主要暗色调-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--一般控件的选种效果默认采用该颜色-->
+        <item name="colorAccent">@color/transparent</item>
+        <item name="android:colorForeground">@color/foreground_material_light</item>
+        <item name="android:textColorPrimary">@android:color/secondary_text_light</item>
+        <item name="android:navigationBarColor">@color/grey_700</item>
+        <item name="android:statusBarColor">?android:attr/colorPrimaryDark</item>
+    </style>
+
+    <!--更多自定义主题
+        设置属性时 要考虑Parent Style 属性是否带有 android: -->
+
+    <style name="AppTheme_AllSet">
+        <!--结构样式-->
+
+        <!--没标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--全屏显示-->
+        <item name="android:windowFullscreen">true</item>
+        <!--定义contentOverlay的背景-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--actionBar是否显示-->
+        <item name="android:windowActionBar">false</item>
+
+        <!--颜色设置-->
+
+        <!--actionBar默认使用该颜色-->
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <!--应用的主要暗色调-->
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!--状态栏颜色，默认使用colorPrimaryDark-->
+        <item name="android:statusBarColor">@color/colorAccent</item>
+        <!--底部栏颜色-->
+        <item name="android:navigationBarColor">@color/colorAccent</item>
+        <!--窗口背景颜色-->
+        <item name="android:windowBackground">@color/colorAccent</item>
+        <!--应用的前景色，ListView的分割线，switch滑动区默认使用该颜色-->
+        <item name="android:colorForeground">@color/colorAccent</item>
+        <!--应用的背景色，popMenu的背景默认使用该颜色-->
+        <item name="android:colorBackground">@color/colorAccent</item>
+
+        <!--一般控件的选种效果默认采用该颜色-->
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <!--控件的默认色调-->
+        <item name="android:colorControlNormal">@color/colorAccent</item>
+        <!--控件按压时的色调-->
+        <item name="android:colorControlHighlight">@color/colorAccent</item>
+        <!--控件选中时的颜色，默认使用colorAccent-->
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+        <!--默认按钮的背景颜色-->
+        <item name="android:colorButtonNormal">@color/colorAccent</item>
+        <!--Button，textView的文字颜色-->
+        <item name="android:textColor">@color/colorAccent</item>
+        <!--RadioButton checkbox等控件的文字-->
+        <item name="android:textColorPrimaryDisableOnly">@color/colorAccent</item>
+        <!--应用的主要文字颜色，actionBar的标题文字默认使用该颜色-->
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+    </style>
+
+    <style name="customTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="customTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--自定义toolBar 菜单样式-->
+    <style name="Theme.ToolBar.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionMenuTextColor">@color/default_text_white</item>
+    </style>
+
+
+
+
+
+    <!--
+    Android平台定义的主题样式
+    android:theme="@android:style/Theme.Dialog"   将一个Activity显示为对话框模式
+    android:theme="@android:style/Theme.NoTitleBar"  不显示应用程序标题栏
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"  不显示应用程序标题栏，并全屏
+
+    android:theme="@android:style/Theme.Light"  背景为白色
+    android:theme="@android:style/Theme.Light.NoTitleBar"  白色背景并无标题栏
+    android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"  白色背景，无标题栏，全屏
+
+    android:theme="@android:style/Theme.Black"  背景黑色
+    android:theme="@android:style/Theme.Black.NoTitleBar"  黑色背景并无标题栏
+    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"    黑色背景，无标题栏，全屏
+
+    android:theme="@android:style/Theme.Wallpaper"  用系统桌面为应用程序背景
+    android:theme="@android:style/Theme.Wallpaper.NoTitleBar"  用系统桌面为应用程序背景，且无标题栏
+    android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen"  用系统桌面为应用程序背景，无标题栏，全屏
+
+    android:theme="@android:style/Translucent" 半透明效果
+    android:theme="@android:style/Theme.Translucent.NoTitleBar"  半透明并无标题栏
+    android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"  半透明效果，无标题栏，全屏
+    android:theme="@android:style/Theme.Panel"
+    -->
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_item_home"
+            android:icon="@mipmap/icon_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/home_item_favorite"
+            android:icon="@mipmap/icon_menu_favorite"
+            android:title="收藏" />
+        <item
+            android:id="@+id/home_item_followers"
+            android:icon="@mipmap/icon_menu_followers"
+            android:title="群组" />
+        <item
+            android:id="@+id/home_item_settings"
+            android:icon="@mipmap/icon_menu_settings"
+            android:title="设置" />
+    </group>
+    <item android:title="分享和反馈">
+        <menu>
+            <item
+                android:id="@+id/home_item_share"
+                android:icon="@mipmap/icon_menu_shares"
+                android:title="分享" />
+            <item
+                android:id="@+id/home_item_feedback"
+                android:icon="@mipmap/icon_menu_subjects"
+                android:title="意见反馈" />
+        </menu>
+    </item>
+</menu>
