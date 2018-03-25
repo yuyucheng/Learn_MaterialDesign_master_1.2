@@ -1,1 +1,1 @@
-include ':Demo_AndroidDesign'
+include ':Demo_AndroidDesign', ':MVPLib'

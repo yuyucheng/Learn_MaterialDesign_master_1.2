@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    testCompile 'junit:junit:4.12'
+
+    //RxJava
+    compile rootProject.ext.dependencies["rxjava2"]
+    compile rootProject.ext.dependencies["rxandroid2"]
+    compile rootProject.ext.dependencies["rxbinding2"]
+
+    //retrofit2
+    compile rootProject.ext.dependencies["retrofit2"]
+    //Gson converter
+    compile rootProject.ext.dependencies["retrofit2-converter-gson"]
+    //RxJava2 Adapter
+    compile rootProject.ext.dependencies["retrofit2-adapter-rxjava2"]
+    //okhttp
+    compile rootProject.ext.dependencies["okhttp3"]
+    compile rootProject.ext.dependencies["okhttp3-intercepter"]
+
+    //ButterKnife
+    compile rootProject.ext.dependencies["butterknife"]
+
+    //X5浏览器内核
+    compile files('libs/tbs_sdk_thirdapp_v3.1.0.1034_43100_sharewithdownload_obfs_20170301_182143.jar')
+}
