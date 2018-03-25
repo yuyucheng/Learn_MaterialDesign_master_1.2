@@ -3,6 +3,8 @@ package com.lead.yu.mvplib;
 import com.lead.yu.mvplib.utils.AppBaseUtil;
 
 /**
+ * 项目配置
+ *
  * Created by yuyucheng on 2018/3/25.
  */
 
