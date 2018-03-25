@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Gson 通用工具
+ * Gson 通用工具new
  *
  * Created by yuyucheng on 2018/3/25.
  */

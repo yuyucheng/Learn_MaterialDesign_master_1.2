@@ -3,7 +3,7 @@ package com.lead.yu.mvplib.utils;
 import java.math.BigDecimal;
 
 /**
- * 精确运算
+ * 精确运算new
  *
  * Created by yuyucheng on 2018/3/25.
  */

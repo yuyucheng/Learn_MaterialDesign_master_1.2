@@ -1,7 +1,7 @@
 package com.lead.yu.mvplib.net;
 
 /**
- * 常用网络请求状态
+ * 常用网络请求状态 bs
  *
  * Created by yuyucheng on 2018/3/25.
  */

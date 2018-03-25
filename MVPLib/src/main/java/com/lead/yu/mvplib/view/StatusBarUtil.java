@@ -408,7 +408,7 @@ public class StatusBarUtil {
     }
 
     /**
-     * 计算状态栏颜色
+     * 计算状态栏颜色 new
      *
      * @param color color值
      * @param alpha alpha值

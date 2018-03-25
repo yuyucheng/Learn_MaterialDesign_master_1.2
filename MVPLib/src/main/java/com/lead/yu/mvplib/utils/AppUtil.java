@@ -28,7 +28,7 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 /**
- * 描述：应用工具类.
+ * 描述：应用工具类.new
  *
  * Created by yuyucheng on 2018/3/25.
  */

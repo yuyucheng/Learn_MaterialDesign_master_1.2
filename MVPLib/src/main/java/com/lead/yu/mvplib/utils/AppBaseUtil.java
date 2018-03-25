@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 
 /**
- * 常用方法
+ * 常用方法new
  *
  * Created by yuyucheng on 2018/3/25.
  */

@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * 队列工厂
+ * 队列工厂ThreadFactory
  *
  * Created by yuyucheng on 2018/3/25.
  */

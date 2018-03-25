@@ -45,7 +45,7 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * 数据类型转换、单位转换
+ * 数据类型转换、单位转换new
  *
  * Created by yuyucheng on 2018/3/25.
  */

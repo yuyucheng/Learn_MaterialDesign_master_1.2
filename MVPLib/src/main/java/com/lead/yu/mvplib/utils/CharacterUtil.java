@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 通用字符处理工具
+ * 通用字符处理工具new
  *
  * Created by yuyucheng on 2018/3/25.
  */

@@ -1,7 +1,7 @@
 package com.lead.yu.mvplib.utils;
 
 /**
- * byte[] 数据拼接
+ * byte[] 数据拼接new
  *
  * Created by yuyucheng on 2018/3/25.
  */

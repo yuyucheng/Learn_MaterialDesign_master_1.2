@@ -469,7 +469,7 @@ public class MathUtil {
     }
 
     /**
-     *
+     * new
      * 描述：获取两点间的距离.
      * @param x1
      * @param y1

@@ -10,7 +10,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 /**
- * 描述：日期处理类.
+ * 描述：日期处理类.new
  *
  * Created by yuyucheng on 2018/3/25.
  */

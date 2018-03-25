@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.concurrent.Executor;
 
 /**
- * 队列工具
+ * 队列工具 TaskQueue
  *
  * Created by yuyucheng on 2018/3/25.
  */

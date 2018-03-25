@@ -44,7 +44,7 @@ public class Md5Util {
     }
 
     /**
-     * MD5 加密
+     * MD5 加密 new
      *
      * @param str 加密明文
      * @return 返回加密之后的密文

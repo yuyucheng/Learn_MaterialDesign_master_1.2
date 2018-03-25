@@ -88,7 +88,7 @@ public class ToastUtil {
     }
 
     /**
-     * 描述：在线程中提示文本信息.
+     * 描述：在线程中提示文本信息.new
      * @param text 消息what值为0
      */
     public static void showToastInThread(Context context,String text) {

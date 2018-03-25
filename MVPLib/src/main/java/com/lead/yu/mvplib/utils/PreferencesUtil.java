@@ -12,7 +12,7 @@ import java.io.StreamCorruptedException;
 import java.util.Map;
 
 /**
- * SharedPreferences 工具
+ * SharedPreferences 工具new
  *
  * Created by yuyucheng on 2018/3/25.
  */

@@ -690,7 +690,7 @@ public class StrUtil {
     }
 
     /**
-     * 描述：ip地址转换为10进制数.
+     * 描述：ip地址转换为10进制数.new
      *
      * @param ip the ip
      * @return the long

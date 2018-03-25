@@ -36,7 +36,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
- * Cache工具
+ * Cache工具 new
  *
  * Created by yuyucheng on 2018/3/25.
  */
